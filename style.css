@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    font-style: Poppins;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #141e30, #243b55);
+}
+
+h2 {
+    color: white;
+}
+
+.weatherContainer {
+    margin: 2rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 19px 0px #e8fffb;
+}
+
+#weatherForm input {
+    border: none;
+    color: rgb(255, 255, 255);
+    outline: none;
+    font-size: 1rem;
+    font-family: sans-serif;
+    background: transparent;
+}
+
+#weatherForm ul li {
+    list-style: none;
+}
+
+.searchBtn {
+    background: transparent;
+    border: none;
+}
+
+.searchBtn ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#weatherForm {
+    display: flex;
+    justify-content: space-around;
+}
+
+.appHeading {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#city {
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.weatherContainer img {
+    width: 50%;
+}
+
+#temp {
+    word-spacing: -8px;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#temp sup {
+    font-size: 1.5rem;
+}
+
+.weatherMain {
+    font-family: sans-serif;
+}
+
+#todayTime,
+.todayDates {
+    font-family: sans-serif;
+    line-height: 2rem;
+    font-size: large;
+}
+
+
+/* Utility Classes */
+
+.d-flex {
+    display: flex;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-space-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+
+/* Media Query for Responsive */
+
+@media screen and (max-width: 307px) {
+    #weatherForm {
+        flex-direction: column;
+    }
+    #weatherForm input {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+.ty {
+    color: aliceblue;
+    text-shadow: 0 0 00px #fff;
+    position: fixed;
+    left: 7px;
+    bottom: 0;
+    width: 100%;
+    background: transparent;
+    color: aliceblue;
+    text-align: left;
+}
+
+.dev {
+    text-align: right;
+    position: fixed;
+    right: 2px;
+    bottom: 0;
+    width: 100%;
+    background: transparent;
+    background: transparent;
+    color: aliceblue;
+    text-shadow: 0 0 00px #fff;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
